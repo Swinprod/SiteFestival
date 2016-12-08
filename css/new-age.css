@@ -383,3 +383,44 @@ img::-moz-selection {
 body {
   webkit-tap-highlight-color: #222222;
 }
+
+/*CLARA*/
+
+.bg-fest{
+    background-image: url("../img/Fond-Festival.png");
+    background-size: cover; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding-top: 10%;
+}
+
+
+.titre-fest{
+    background-color: #fff;
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 3%;
+    color:#7D7D7D;
+    text-align: center;
+   
+
+
+}
+.txt-fest {
+    text-align: justify;
+    padding-top: 3%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 10%;
+   
+    
+}
+
+/*richard*/
+
+.sectiona{height: 100%;position: relative;}
+.text-center{padding-bottom: 4%;}
+
