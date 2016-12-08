@@ -1,25 +1,25 @@
 $( document ).ready(function() {
 
-    $( window ).load(function() { 
-	
+    $( window ).load(function() {
+
 /*
 	Thanks for taking a look at the new film countdown demo
-	
+
   A lot more demos, tricks and tips are in the works
-	I've finally set up a Twitter account for all these things 
+	I've finally set up a Twitter account for all these things
   so if you like this demo please follow me: @Craig_PointC
-	
-	If you use this countdown on anything, please send me a link. 
+
+	If you use this countdown on anything, please send me a link.
   I'd love to see it.
-	
+
 	Have fun.
-	
-*/	
+
+*/
 
 var demo = document.getElementById("projectionScreen"),
 	  countDown = document.getElementById("counter"),
-    masterTimeline = new TimelineMax({delay:0.1}),	  
-	  count = 2; // starting number for the countdown
+    masterTimeline = new TimelineMax({delay:0.1}),
+	  count = 4; // starting number for the countdown
 
 TweenMax.set(demo, {transformOrigin:"center", autoAlpha:1, xPercent:-50, yPercent:-50});
 TweenMax.set("#rightLeg", {transformOrigin:"0% 0%", rotation:30, x:5});
@@ -35,8 +35,8 @@ TweenMax.set("#centerShadowBottom, #movieClip",{autoAlpha:0, transformOrigin:"ce
 
 // start the countdown with the count variable value
 countDown.textContent = count;
-      
-     
+
+
 
 // create the projection screen animation
 function projector() {
@@ -51,11 +51,11 @@ tl.from("#supports", 0.6, {scaleY:0, ease:Expo.easeInOut})
   .to("#screen", 0.6, {scaleY:1, ease:Power4.easeOut},"screenDown")
   .from("#screenBottom, #centerShadowBottom", 0.6, {y:-569, ease:Power4.easeOut},"screenDown")
   .to("#shadow", 0.6, {scaleX:1, autoAlpha:.2, ease:Power4.easeOut},"screenDown")
-  .to("#film", 1.5, {autoAlpha:1});	
+  .to("#film", 1.5, {autoAlpha:1});
 return tl;
 }
 
-// create the countdown animation 
+// create the countdown animation
 function theCount() {
 var tl = new TimelineMax({repeat:count-1, onRepeat:changeIt});
 tl.to("#rotator", 1, {rotation:360, ease:Linear.easeNone})
@@ -63,7 +63,7 @@ tl.to("#rotator", 1, {rotation:360, ease:Linear.easeNone})
 return tl;
 }
 
-// fade out the countdown and show GreenSock info 
+// fade out the countdown and show GreenSock info
 function movie() {
 var tl = new TimelineMax();
 tl.to("#film", 0.2, {autoAlpha:0})
@@ -78,26 +78,26 @@ return tl;
 // change the countdown on each repeat of the film leader animation
 function changeIt() {
 	count--;
-	countDown.textContent = count;	
+	countDown.textContent = count;
 }
-      
-    
+
+
 
 /* ---------------------------------------------------------------
-	 Correctly size/resize and position the SVG 
+	 Correctly size/resize and position the SVG
 	---------------------------------------------------------------*/
 
 function sizeAll() {
 	var h = window.innerHeight,
 		  w = window.innerWidth;
-		
+
 	if ( w > h) {
 		TweenMax.set(demo, {height:h, width:h});
-		} 
-		
+		}
+
 	else {
 		TweenMax.set(demo, {height:w, width:w});
-	
+
 		}
 }
 
@@ -113,7 +113,7 @@ masterTimeline
 	.add( movie() );
 
 	// end window load
-	}); 
+	});
 
 // end doc ready
 });
