@@ -420,3 +420,63 @@ img::-moz-selection
 {
 	color:#fff;
 background:0 0}
+/*.container
+{
+    background-color: #cccccc;
+
+}*/
+footer {
+  background-color: #cccccc;
+}
+footer .fa
+{
+    font-size: 50px;
+    color: black;
+    margin: 10px;
+    transition: all 0.5s;
+}
+
+.fa-twitter:hover {
+    color: #4099FF;
+    transition: all 0.5s;
+
+}
+
+.fa-facebook-official:hover{
+    color: #3b5998;
+    transition: all 0.5s;
+
+}
+
+.fa-youtube:hover{
+    color: #cc181e;
+    transition: all 0.5s;
+
+}
+
+.fa-instagram:hover{
+color:  #8a3ab9;
+transition: all 0.5s;
+
+}
+
+.mentions
+{
+    background-color: white;
+    color: #222;
+    text-align: right;
+    padding: 10px 10px 10px 10px;
+
+}
+
+.mentions ul {margin-top: 40px;}
+.mentions ul li {display: inline-block;vertical-align: top;width: 15%;}
+#logo_footer {
+  float: left;
+  width: 60px;
+}
+#droit_footer {
+  float: left;
+  margin-top: 40px;
+  margin-left: 60px;
+}
