@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE php>
+<html lang="fr">
 
 <head>
 
@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>New Age - Start Bootstrap Theme</title>
+    <title>The 8' Festival</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -18,6 +18,9 @@
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+    
 
     <!-- Plugin CSS -->
     <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
@@ -27,6 +30,9 @@
     <!-- Theme CSS -->
     <link href="css/new-age.min.css" rel="stylesheet">
     <link href="css/new-age.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style_effet.css">
+    
+    <link href="css/circularcountdown.min.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -38,7 +44,6 @@
 
 <!-- Animation PierrYo Head -->
     <link rel="stylesheet" href="css/style_acc.css">
-    <link rel="stylesheet" href="css/style_effet.css">
 
 
 
@@ -53,7 +58,7 @@
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Start Bootstrap</a>
+                <a class="navbar-brand page-scroll" href="#page-top" style="margin-left:5%;"><img src="img/logoN.png" class="img-responsive" alt="logo" id="logo_header"  onmouseover="this.src='img/logoM.png'" onmouseout="this.src='img/logoN.png'"></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -63,14 +68,14 @@
                         <a class="page-scroll" href="#Festival">Le Festival</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#video">Les courts-métrages</a>
+                        <a class="page-scroll" href="#video">Les courts métrages</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#inscription">Inscription</a>
                     </li>
-                    <li>
+                    <li style="margin-right:5px;">
                         <a class="page-scroll" href="#contact">Contact</a>
-                    </li>
+                    </li >
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -79,9 +84,6 @@
     </nav>
 
     <header>
-
-
-
     <svg id="projectionScreen" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200">
 
 <defs>
@@ -109,7 +111,6 @@
 
 <title>Film Countdown</title>
 <ellipse id="shadow" cx="600" cy="1080.97" rx="375" ry="13" fill="#111" opacity="0.15"/>
-
 <g id="screenMaster">
   <g id="supports" transform="translate(5,0)">
   <rect id="centerStand" x="583.78" y="117.91" width="18.76" height="718.65" fill="#878787"/>
@@ -122,35 +123,26 @@
 	  <path id="rtFoot" d="M769.12,1078.95a4.14,4.14,0,0,1-4.14,4.14h-21.9a4.14,4.14,0,0,1-4.14-4.14h0a4.14,4.14,0,0,1,4.14-4.14H765a4.14,4.14,0,0,1,4.14,4.14h0Z" fill="#f9b233"/>
 	</g>
   </g>
-
-
 <rect id="screen" x="213.04" y="168.42" width="774.93" height="552.7" fill="#fff"/>
 <rect id="centerShadowBottom" x="589.08" y="744.16" width="18.16" height="18.61" fill="#575756"/>
-
 <g id="screenBars">
   <g id="screenTop">
 	<rect id="topCore" x="168.78" y="154.36" width="863.43" height="17.97" rx="4" ry="4" fill="#c6c6c6"/>
 	<rect id="topBar" x="180.57" y="148.21" width="839.87" height="30.3" rx="8" ry="8" fill="#4c4c4c"/>
 	<rect id="topHighlight" x="188.62" y="166.93" width="825.31" height="6.14" fill="#fff" opacity="0.2"/>
   </g>
-
   <g id="screenBottom">
 	<rect id="bottomCore" x="168.78" y="722.05" width="863.43" height="17.97" rx="4" ry="4" fill="#c6c6c6"/>
 	<rect id="bottomBar" x="180.57" y="715.34" width="839.87" height="34.63" rx="8" ry="8" fill="#4c4c4c"/>
 	<rect id="bottomHighlight" x="187.28" y="722.54" width="825.31" height="6.14" fill="#fff" opacity="0.2"/>
   </g>
 </g>
-
 </g>
-
 <g id="film" opacity="0">
    <rect width="700" height="500" x="250" y="200" rx="30" ry="30" opacity="0.65" fill="url(#filmGradient)"/>
-
   <g mask="url(#filmMask)" >
 	<rect width="700" height="500" x="250" y="200" rx="30" ry="30" fill="url(#filmGradient)" />
   </g>
-
-
   <g stroke-width="2">
 	<circle cx="600" cy="450" r="175" stroke="#111"  fill="none" />
 	<circle cx="600" cy="450" r="150" stroke="#fff" fill="none" />
@@ -158,12 +150,9 @@
 	<line x1="350" y1="450" x2="850" y2="450" stroke="#111"  />
 	<line x1="600" y1="220" x2="600" y2="680" stroke="#111"  />
  </g>
-
 <line id="rotator" x1="600" y1="275" x2="600" y2="450" stroke="#333" stroke-width="3" />
-
 <text id="counter" text-anchor="middle" x="600" y="535" font-size="250" ></text>
 </g>
-
 <g id="movieClip">
   <g transform="translate(360.000000,700.000000) scale(0.100000,-0.100000)"
 fill="#000000" stroke="none">
@@ -235,155 +224,186 @@ fill="#000000" stroke="none">
 <path d="M3514 1025 c-3 -13 -4 -118 -2 -232 l4 -208 83 -3 c52 -2 88 1 97 9
 24 20 5 29 -64 29 l-67 0 0 177 c0 98 -4 195 -8 216 -9 43 -33 50 -43 12z"/>
 </g>
-	</g>
-  </g>
-
-
 </g>
-
-
-
+</g>
 </svg>
     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js'></script>
-
 <!-- Animation PierrYo JS -->
     <script src="js/index_acc.js"></script>
-
     </header>
- 
     <!-- début section festoche -->
-    
-    
-   <section id="Festival" class="bg-fest" >
-       
-        
-        <div class="titre-fest">
-            
-            <h1>Le Festival</h1>
-            
-            <p class="txt-fest">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat, sapien quis rutrum semper, tellus neque dapibus elit, a condimentum odio tellus non turpis. Pellentesque placerat mauris dolor, quis aliquet dui pretium a. Aliquam tincidunt tellus orci, eu ultrices nisl accumsan a. Sed in augue eu urna ornare porttitor. Quisque non sollicitudin purus. Proin interdum malesuada magna sed pharetra. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In tristique sem non libero interdum, ac semper eros condimentum. In tincidunt tortor in ullamcorper sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat, sapien quis rutrum semper, tellus neque dapibus elit, a condimentum odio tellus non turpis. Pellentesque placerat mauris dolor, quis aliquet dui pretium a. Aliquam tincidunt tellus orci, eu ultrices nisl accumsan a. Sed in augue eu urna ornare porttitor. Quisque non sollicitudin purus.
-           
-            </p>
-        
+    <section id="Festival" class="parallax">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 sideF"></div>
+
+                <div class="col-md-6 text-center titleF">
+                    <h1 class="titre-fest">Le Festival</h1>
+                    <hr class="bar">
+                </div>
+                
+                <div class="col-md-12 fond-blanc">
+	                <div class="col-md-3 sideF"></div>
+
+					<div class="col-md-6 text-center textF">
+                    <p class="txt-fest">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat, sapien quis rutrum semper, tellus neque dapibus elit, a condimentum odio tellus non turpis. Pellentesque placerat mauris dolor, quis aliquet dui pretium a. Aliquam tincidunt tellus orci, eu ultrices nisl accumsan a. Sed in augue eu urna ornare porttitor. Quisque non sollicitudin purus. Proin interdum malesuada magna sed pharetra. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In tristique sem non libero interdum, ac semper eros condimentum. In tincidunt tortor in ullamcorper sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat, sapien quis rutrum semper, tellus neque dapibus elit, a condimentum odio tellus non turpis.</p>
+                    <div class="col-md-3 sideF"></div>
+                </div>
+
+                <div class="col-md-3 sideF"></div>
+            </div>
         </div>
-        
     </section>
- <!-- début section video -->
-        
-        <section id="video" class="sectiona">
-        <div class="container text-center">
-            <h1>Les videos</h1>
+    
+    <!-- début section video -->
+    <section id="video" class="">
+	    <div class="col-md-12 text-center" >
+		    <h1 class="titre">Les courts métrages</h1>
+	        <hr class="bar">
+	    </div>
+        <div class="container">
+         <div class="col-md-4 videos">
+                <figure class="snip1573">
+                  <img src="img/affiche.jpg" alt="sample89" />
+                  <figcaption>
+                    <h3>Comédie</h3>
+                  </figcaption>
+                  <a href="#"></a>
+                </figure>
+         </div>
+         <div class="col-md-4 videos">
+                <figure class="snip1573">
+                  <img src="img/affiche2.png" alt="sample89" />
+                  <figcaption>
+                    <h3>Science-Fiction</h3>
+                  </figcaption>
+                  <a href="#"></a>
+                </figure>
+         </div>
+         <div class="col-md-4 videos">
+                <figure class="snip1573">
+                  <img src="img/affiche3.png" alt="sample89" />
+                  <figcaption>
+                    <h3>Romantique</h3>
+                  </figcaption>
+                  <a href="#"></a>
+                </figure>
+         </div>
         </div>
-        <div class="englobe">
-          <div class="col-lg-2 affiches">
-            <figure class="snip1573">
-              <img src="img/affiche.jpg" alt="sample89" />
-              <figcaption>
-                <h3>Thriller</h3>
-              </figcaption>
-              <a href="#"></a>
-            </figure>
-          </div>
-          <div class="col-lg-2 affiches">
-            <figure class="snip1573">
-              <img src="img/affiche.jpg" alt="sample89" />
-              <figcaption>
-                <h3>Thriller</h3>
-              </figcaption>
-              <a href="#"></a>
-            </figure>
-          </div>
-          <div class="col-lg-2 affiches">
-            <figure class="snip1573">
-              <img src="img/affiche.jpg" alt="sample89" />
-              <figcaption>
-                <h3>Thriller</h3>
-              </figcaption>
-              <a href="#"></a>
-            </figure>
-          </div>
-          <div class="col-lg-2 affiches">
-            <figure class="snip1573">
-              <img src="img/affiche.jpg" alt="sample89" />
-              <figcaption>
-                <h3>Thriller</h3>
-              </figcaption>
-              <a href="#"></a>
-            </figure>
-          </div>
-          <div class="col-lg-2 affiches">
-            <figure class="snip1573">
-              <img src="img/affiche.jpg" alt="sample89" />
-              <figcaption>
-                <h3>Thriller</h3>
-              </figcaption>
-              <a href="#"></a>
-            </figure>
-          </div>
-          <div class="col-lg-2 affiches">
-            <figure class="snip1573">
-              <img src="img/affiche.jpg" alt="sample89" />
-              <figcaption>
-                <h3>Thriller</h3>
-              </figcaption>
-              <a href="#"></a>
-            </figure>
-          </div>
-          </div>
+                <div class="container">
+         <div class="col-md-4 videos">
+                <figure class="snip1573">
+                  <img src="img/affiche4.png" alt="sample89" />
+                  <figcaption>
+                    <h3>Western</h3>
+                  </figcaption>
+                  <a href="#"></a>
+                </figure>
+         </div>
+         <div class="col-md-4 videos">
+                <figure class="snip1573">
+                  <img src="img/affiche5.png" alt="sample89" />
+                  <figcaption>
+                    <h3>Horreur</h3>
+                  </figcaption>
+                  <a href="#"></a>
+                </figure>
+         </div>
+         <div class="col-md-4 videos">
+                <figure class="snip1573">
+                  <img src="img/affiche6.png" alt="sample89" />
+                  <figcaption>
+                    <h3>Action</h3>
+                  </figcaption>
+                  <a href="#"></a>
+                </figure>
+         </div>
+        </div>
     </section>
 
+    <!-- début section inscription -->
+    <section id="inscription" class="">
+        <div class="container">
+            <div class="col-md-12 text-center" >
+                <h1 class="titre">Inscription</h1>
+                <hr class="bar">
+            </div>
+            
+            <div class="row">
+            <p class="txt-insc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat, sapien quis rutrum semper, tellus neque dapibus elit, a condimentum odio tellus non turpis.</p>
+            </div>
+            
+            <form>
+            <div class="col-md-4 field" >
+            <!-- Text input-->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="name">Nom</label>  
+              <br />
+              <input id="name" name="name" type="text" placeholder="Entrez votre nom" class="form-control input-md">
+            </div>
+            </div>
+            <div class="col-md-4 field" >
+            <!-- Text input-->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="prenom">Prénom</label>  
+              <br />
+              <input id="prenom" name="prenom" type="text" placeholder="Entrez votre prénom" class="form-control input-md">
+            </div>
+            </div>
+            <div class="col-md-4 field" >
+            <!-- Text input-->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="mail">E-mail</label>  
+              <br />
+              <input id="mail" name="mail" type="text" placeholder="Entrez votre adresse e-mail" class="form-control input-md">
+            </div>
+            </div>
+            <div class="col-md-12 text-center" >
+                            <!-- Button -->
+            <div class="form-group">
+              <label class="control-label" for="send"></label>
+                <button id="send" name="send" class="btn btn-success">Envoyer</button>
+            </div>
+            </div>
+            </form>
 
- <!-- début section inscription -->
-    <section id="inscription" class="bg-primary">
+        </div>
     </section>
- <!-- début section contact -->
+    <!-- début section contact -->
     <section id="contact" class="">
+        <div class="container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2889.259756178579!2d3.9098507153767743!3d43.601132879123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b6a94c28012eb5%3A0x417aa0c7c2c474d8!2sEcole+Commerce+ESG+Montpellier!5e0!3m2!1sfr!2sfr!4v1481241520099" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
     </section>
-    
-    <footer class="container col-lg-12 " id="footer_fond">
+    <footer class="container col-lg-12 text-center" id="footer_fond">
     <div>
-
         <ul class="list-inline">
             <li>
-                <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
             </li>
             <li>
-               <i class="fa fa-twitter" aria-hidden="true"></i>
+               <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
 
             </li>
             <li>
-                <i class="fa fa-instagram" aria-hidden="true"></i>
+                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
 
             </li>
             <li>
-            <i class="fa fa-youtube" aria-hidden="true"></i>
+            <a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a>
             </li>
-
         </ul>
     </div>
-  </footer>
-
+    </footer>
     <footer class="mentions col-lg-12">
       <img src="img/8 festival.png" alt="" id="logo_footer">
-      <p id ="droit_footer">2016 Tous droits réservés - ESARC</p>
-    <div>
-        <ul>
-            <li>
-                <p>Inscription</p>
-            </li>
-            <li>
-                <p >Festival Montpellier</p>
-            </li>
-            <li>
-                <p>Mentions Légales</p>
-            </li>
-        </ul>
-    </div>
-</footer>
-
+        <br>
+        <a class="page-scroll" href="#video" style="text-decoration:none;">mentions légales</a>
+      <p class="mentions text-center">&copy 2016 Tous droits réservés - ESARC</p>
+    </footer>
+    <!-- Compteur -->
+    <script src="js/circularcountdown.min.js"></script>
     <!-- jQuery -->
     <script src="vendor/jquery/jquery.min.js"></script>
 
